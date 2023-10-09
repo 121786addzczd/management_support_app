@@ -96,7 +96,7 @@ def register_and_display_comments():
     # file_nameに.が二つ異常あることは想定していない
     with st.form(key=file_name.rsplit('.', 1)[0]):
         # textbox
-        comment = st.text_input("ｍ、コメントを記入してください")
+        comment = st.text_input("コメントを記入してください")
         submit_btn = st.form_submit_button("登録")
         
         if submit_btn:  # ボタンをクリックしたらコメントを登録する
